@@ -9,8 +9,6 @@ Generates config files in following formats:
 
 * **json** (default)
 * **js** module
-* **coffee** module
-* **cson**
 * **yaml**
 
 ## Getting Started
@@ -35,8 +33,7 @@ The command will parse your grunt configuration object and automatically create 
 ## Command line options
 
 * `--target=<dir>` you can specify the output directory using the `target`-flag. E.g.: `grunt generate_configs --target=foo` will create a `foo` directory instead of `config`.
-* `--type=[js|json|coffee|cson|yaml|yml]` allows you to output the configuration objects as `json`, `yaml`, `cson`, `coffee` or `js` files.
-* `--json`, `--coffee`, `--cson`, `--js`, `--yaml` and `--yml` as shorthand for `type=<type>`. The `type` flag will always override any shorthands.
+* `--json`, `--cson`, `--js`, `--yaml` and `--yml` as shorthand for `type=<type>`. The `type` flag will always override any shorthands.
 * `--no-prompt` allows you to skip the default prompt about overwriting and already existing directory.
 
 ## Examples
@@ -118,38 +115,6 @@ See the project for more information, options and examples: [load-grunt-configs]
 * [json](/demos/json)
 * [js](/demos/js)
 * [yaml](/demos/yaml)
-* [coffee](/demos/coffee)
-* cson: TODO
-
-## Changelog
-
-* __v0.6.0__: Switch to safe cson
-* __v0.5.2__: Add --no-prompt flag
-* __v0.5.1__:
-    * Use util.inspect for js generation
-    * Add cson support
-    * Fix incorrect testing
-    * Update .travis.yml to test all branches
-    * Remove support for node < v0.10
-* __v0.5.0__:
-    * Update unit tests to include all flags
-    * Expose main method for parsing of grunt config obj
-    * Add js, coffee, yaml, json flags
-    * Separate filegen to lib and add removal of config dir upon overwrite
-* __v0.4.1__: Makes the command global
-* __v0.4.0__: adds cli
-* __v0.3.0__:
-    * Adds demos
-    * Adds yaml support
-    * Adds Coffeescript support
-* __v0.2.0__:
-    * Test all possibilities, idiot!
-    * fixes #2, incorrect ext for js files
-* __v0.1.2__: Fixes #1, moved inquirer from devDeps to deps
-* __v0.1.1__: keywords, keywords, keywords, sigh
-* __v0.1.0__:
-    * Fixes CLI options examples
-    * creates task grunt-generate-configs
 
 ## License
 
