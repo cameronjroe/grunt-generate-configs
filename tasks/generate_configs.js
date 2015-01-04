@@ -11,7 +11,7 @@
 var inquirer = require('inquirer');
 var writeFiles = require('../lib/writeFiles');
 
-var typeFlags = ['json', 'js', 'coffee', 'yaml', 'yml', 'cson'];
+var typeFlags = ['json', 'js', 'yaml', 'yml', 'cson'];
 
 module.exports = function(grunt){
 
